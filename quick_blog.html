@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A first blog post</title>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" >
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+      <link rel="stylesheet" type= "text/css" href="timeline.css">
+
+
+</head>
+
+<body>
+
+  <!-- head banner -->
+   <div class= "jumbotron-header">
+     <div class = "transbox-header">
+       <div class = "center">
+       <img class = "profile" src="images/badger.png" >
+     </div>
+       <h1> Jessica Kate Rowntree Ward </h1>
+
+     </div>
+   </div>
+  <!--Navigation bar -->
+
+  <nav class="navbar navbar-inverse navbar-sticky">
+
+  <div class="container">
+
+  <div class="navbar-header">
+
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+  <span class="sr-only">Toggle navigation</span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  </button>
+  <a class="navbar-brand" href="index.html"> Jessica Ward</a>
+
+  </div>
+
+  <div id = "navbar" class="collapse navbar-collapse">
+
+  <ul class="nav navbar-nav">
+
+  <li> <a href="index.html"> Home</a>
+  <li><a href="timeline.html"> About Me </a></li>
+  <li class="active"><a href="First_blog.html"> Blog </a></li>
+  <li><a href="publications.html"> Publications </a></li>
+
+  </ul>
+
+  </div>
+
+  </div>
+
+  </nav>
+
+  <section class="container">
+
+    <div class="blog">
+
+<h1> Updating R as painfree as possible </h1>
+
+<p> Last week I had to do update R on my work computer, it turned into a rather painful task which took me the best part of the day and resulted in me wanting to ragequit several times!</p>
+
+<iframe src="https://giphy.com/embed/EtB1yylKGGAUg" width="320" height="250" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/the-office-panda-rage-EtB1yylKGGAUg">I was the panda</a></p>
+
+<p> I was Naive and didn't think about my packages and because I was doing a major update (going from version 3.4.something to 3.5.1) I needed to re=install all of my packages but I had no complete list of the packages that I had been using.</p>
+
+<p> Only after I had gone through this pain did someone tell me about the `installR` package which probably could have saved me a whole heap of time! A couple of days later whilst at home I made the time to install the update on my laptop, I then discovered that the `installR` package is not available for MacOS :(</p>
+
+<p> I did however find a relatively straightforward solution which I am documenting here incase future me needs to use this method again. I'm sure there are much better ways of doing this but this one worked for me.  </p>
+
+<p> I used the `updateR` package which I came across thanks to <a href= "https://www.linkedin.com/pulse/3-methods-update-r-rstudio-windows-mac-woratana-ngarmtrakulchol/">this blog post</a></p>
+
+<p> The <a href= "https://github.com/AndreaCirilloAC/updateR">updateR</a> package is great but it is still in development and there seem to be some bugs with the `needed packages` function - which was kinda the whole reason for using this package in the first place so I modified my workflow slightly</p>
+
+<ol>
+<li>First I generated a snapshot of the packages that I had installed using `installed.packages()`</li>
+<li>Then I copied the output to a script file and used the wonderful `Alt` + `highlight` that allows you to edit multiple lines in Rstudio</li>
+<li> Once I had a saved list of package names (packagename, packagename, packagename...) I was ready to update my R version following the steps in <a href" https://andreacirilloblog.wordpress.com/2015/10/22/updater-package-update-r-version-with-a-function-on-mac-osx/"> this tutorial</a></li>
+<li> Then I installed the <a href="https://github.com/cran/librarian">librarian</a> package </li> 
+<li> Then using the librarian package and the previously saved list of package names to reinstall all of the packages that I need </li>
+<li> librarian::shelf(packagename,packagename,packagename) MAGIC</li>
+
+<p> This works for all CRAN packages but it failed for github packages because the syntax of librarian::shelf requires that the github username prefixes the package name, thankfully I only had a couple of these packages so it wasnt too painful to manually reinstall them. </p>
+
+
+
+
+</ol>
+
+
+
+    <a href="https://www.twitter.com/JKRWard" class="fa fa-twitter"></a>
+    <a href="https://www.github.com/JKRWard" class="fa fa-github"></a>
+
+ </section>
+ <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+ <script src= "js/bootstrap.min.js"></script>
+</body>
+</html>
