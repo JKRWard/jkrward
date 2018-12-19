@@ -68,36 +68,34 @@
 
     <div class="blog">
 
-<h1> Updating R as painfree as possible </h1>
+<h1> Updating R as pain free as possible </h1>
 
-<p> Last week I had to do update R on my work computer, it turned into a rather painful task which took me the best part of the day and resulted in me wanting to ragequit several times!</p>
+<p> Last week I had to do update R on my work computer, it turned into a rather painful task which took me the best part of the day and resulted in me wanting to rage-quit several times!</p>
 
 <iframe src="https://giphy.com/embed/EtB1yylKGGAUg" width="320" height="250" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/the-office-panda-rage-EtB1yylKGGAUg">I was the panda</a></p>
 
-<p> I was Naive and didn't think about my packages and because I was doing a major update (going from version 3.4.something to 3.5.1) I needed to re=install all of my packages but I had no complete list of the packages that I had been using.</p>
+<p> I was naive and didn't think about my packages and because I was doing a major update (going from version 3.4.something to 3.5.1) I needed to re-install all of my packages but I had no complete list of the packages that I had been using.</p>
 
 <p> Only after I had gone through this pain did someone tell me about the `installR` package which probably could have saved me a whole heap of time! A couple of days later whilst at home I made the time to install the update on my laptop, I then discovered that the `installR` package is not available for MacOS :(</p>
 
-<p> I did however find a relatively straightforward solution which I am documenting here incase future me needs to use this method again. I'm sure there are much better ways of doing this but this one worked for me.  </p>
+<p> I did however find a relatively straightforward solution which I am documenting here in case future me needs to use this method again. I'm sure there are much better ways of doing this but this one worked for me.  </p>
 
 <p> I used the `updateR` package which I came across thanks to <a href= "https://www.linkedin.com/pulse/3-methods-update-r-rstudio-windows-mac-woratana-ngarmtrakulchol/">this blog post</a></p>
 
 <p> The <a href= "https://github.com/AndreaCirilloAC/updateR">updateR</a> package is great but it is still in development and there seem to be some bugs with the `needed packages` function - which was kinda the whole reason for using this package in the first place so I modified my workflow slightly</p>
 
 <ol>
-<li>First I generated a snapshot of the packages that I had installed using `installed.packages()`</li>
-<li>Then I copied the output to a script file and used the wonderful `Alt` + `highlight` that allows you to edit multiple lines in Rstudio</li>
-<li> Once I had a saved list of package names (packagename, packagename, packagename...) I was ready to update my R version following the steps in <a href" https://andreacirilloblog.wordpress.com/2015/10/22/updater-package-update-r-version-with-a-function-on-mac-osx/"> this tutorial</a></li>
-<li> Then I installed the <a href="https://github.com/cran/librarian">librarian</a> package </li> 
-<li> Then using the librarian package and the previously saved list of package names to reinstall all of the packages that I need </li>
-<li> librarian::shelf(packagename,packagename,packagename) MAGIC</li>
-
-<p> This works for all CRAN packages but it failed for github packages because the syntax of librarian::shelf requires that the github username prefixes the package name, thankfully I only had a couple of these packages so it wasnt too painful to manually reinstall them. </p>
-
-
-
+  
+<li>1. First I generated a snapshot of the packages that I had installed using `installed.packages()`</li>
+<li>2. Then I copied the output to a script file and used the wonderful `Alt` + `highlight` that allows you to edit multiple lines in Rstudio</li>
+<li>3. Once I had a saved list of package names (packagename, packagename, packagename...) I was ready to update my R version following the steps in <a href" https://andreacirilloblog.wordpress.com/2015/10/22/updater-package-update-r-version-with-a-function-on-mac-osx/"> this tutorial</a></li>
+<li>4. Then I installed the <a href="https://github.com/cran/librarian">librarian</a> package </li> 
+<li>5. Then using the librarian package and the previously saved list of package names to re install all of the packages that I need </li>
+<li>6. librarian::shelf(packagename,packagename,packagename) MAGIC</li>
 
 </ol>
+
+<p> This works for all CRAN packages but it failed for github packages because the syntax of librarian::shelf requires that the github username prefixes the package name, thankfully I only had a couple of these packages so it wasn't too painful to manually re install them. </p>
 
 
 
