@@ -86,8 +86,8 @@
 
 <ol>
   
-<li>1. First I generated a snapshot of the packages that I had installed using `installed.packages()`</li>
-<li>2. Then I copied the output to a script file and used the wonderful `Alt` + `highlight` that allows you to edit multiple lines in Rstudio</li>
+<li>1. First I generated a snapshot of the packages that I had installed using `pacs <- installed.packages()` and converted the output to a data frame </li>
+<li>2. Then I printed the first coolumn (containing the names of the packages) copied the output to a script file and used the wonderful `Alt` + `highlight` that allows you to edit multiple lines in Rstudio to manipulate the list into the format that I wanted</li>
 <li>3. Once I had a saved list of package names (packagename, packagename, packagename...) I was ready to update my R version following the steps in <a href" https://andreacirilloblog.wordpress.com/2015/10/22/updater-package-update-r-version-with-a-function-on-mac-osx/"> this tutorial</a></li>
 <li>4. Then I installed the <a href="https://github.com/cran/librarian">librarian</a> package </li> 
 <li>5. Then using the librarian package and the previously saved list of package names to re install all of the packages that I need </li>
