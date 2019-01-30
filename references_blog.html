@@ -67,6 +67,8 @@
   <section class="container">
 
     <div class="blog">
+      
+      <h1> Managing references made simple </h1>
 
 <p> I remember being given some advice that many coders are probably aware of : </p>
 
@@ -84,10 +86,14 @@
 
 <p>For a while I got away with manually referencing but it is time consuming and I knew that when it came to writing a thesis, and for easing the process of trying to publish papers I would need some help. I'm not quite sure how I stumbled across Zotero but I'm glad that I did. It's really easy to use, you can get a web browser add in which makes it really easy to add references to your library, and it's hosted online so you can transfer libraries easily between machines.</p> 
 
-<p>The main reason that I chose Zotero was because of it's integration with R through the `citr` package and the `better bib tex` extension for Zotero itself. This means that it's really easily incorporated into my workflow when I'm writing reports (and slowly thesis chapters) in R markdown.</p>
+<p>The main reason that I chose Zotero was because of it's integration with R through the <a href = "https://github.com/crsh/citr">citr</a> package and the `better bib tex` extension for Zotero itself. This means that it's really easily incorporated into my workflow when I'm writing reports (and slowly thesis chapters) in R markdown.</p>
 
+<img src= "images/references_blog_1.JPG" class= "center"> 
+  
 <p>For each report I specify a reference file (.bib file extensions) in the yaml header of the markdown document, then when I want to add a reference to the text  I use the `citr` addin (I've assigned it to the shortcut `Ctrl`+`Alt`+`c`) which magically links to my zotero library. I simply find the reference and as if by magic the information is added to my references file and the citation key appears in my text. </p>
 
+ <img src= "addin_demo.gif" class= "center"> 
+  <a href = "https://github.com/crsh/citr"> demo from the awesome citr github page, go check it out to get started</a>
  
 <p>A little tool like this is really great, it makes my day to day life easier and means that I'm not faffing around with references which (in theory) frees up more time for writing. I think that tools like this are really important, if we want to encourage open, transparent and robust science then it needs to be easy to do. Software like this, making it so simple to create referenced documents and reports is amazing and I'm hoping that in telling you all about how wonderful this way of working is might just convince you that you too can write papers in R, integrating code and analyses with the write up in a fully reproducible way! </p>
 
