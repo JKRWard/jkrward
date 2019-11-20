@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QE Hack</title>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" >
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+      <link rel="stylesheet" type= "text/css" href="timeline.css">
+
+
+</head>
+
+<body>
+
+  <!-- head banner -->
+   <div class= "jumbotron-header">
+     <div class = "transbox-header">
+       <div class = "center">
+       <img class = "profile" src="images/badger.png" >
+     </div>
+       <h1> Jessica Kate Rowntree Ward </h1>
+
+     </div>
+   </div>
+  <!--Navigation bar -->
+
+  <nav class="navbar navbar-inverse navbar-sticky">
+
+  <div class="container">
+
+  <div class="navbar-header">
+
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+  <span class="sr-only">Toggle navigation</span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  </button>
+  <a class="navbar-brand" href="index.html"> Jessica Ward</a>
+
+  </div>
+
+  <div id = "navbar" class="collapse navbar-collapse">
+
+  <ul class="nav navbar-nav">
+
+  <li> <a href="index.html"> Home</a>
+  <li><a href="timeline.html"> About Me </a></li>
+  <li class="active"><a href="First_blog.html"> Blog </a></li>
+  <li><a href="publications.html"> Publications </a></li>
+
+  </ul>
+
+  </div>
+
+  </div>
+
+  </nav>
+
+  <section class="container">
+
+    <div class="blog">
+
+      <h1> Quantitative Ecology hackathon</h1>
+
+
+<p>
+The BES Quantitative Ecology special interest group and the Citizen Science special interest group came together for a hackathon with the aim of tackling challenges that could couple socio-demographic and environmental data. Bringing together ecologists from institutions across the length and breadth of the UK it was an excellent opportunity to meet fellow coders working across the field of ecology.
+</p>
+ <p>
+With most participants having already poured over the list of challenges and assembled into teams prior to the event the day got off to a quick start. Before we joined our respective teams we had the pleasure of a ‘motivational hack talk’ from fellow Institute fellow, the wonderful Anna Krystalli. 
+</p>
+ <p>
+Anna professed her love for all things open source, her favourite things about hackathons and how to sign up for free #Hacktoberfest t-shirts. 
+</p>
+ <p>
+Hackathons are not particularly common in the ecology sphere (although the success of this event suggests there might be more to come from BES QE) so for many of us the day was our first experience of the wonders of which Anna had spoken. For some it was a great introduction to collaborative coding and to the use of GitHub for code sharing, and with facilitators on hand to help work through even the most painful of git headaches everyone had gained some new skills by the end of the day.
+ </p>       
+      
+
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Well done to all the hackers at <a href="https://twitter.com/hashtag/QEHack?src=hash&amp;ref_src=twsrc%5Etfw">#QEHack</a> a really great day working on citizen science data, open data, shiny apps and lots lots more <a href="https://twitter.com/BESCitSci?ref_src=twsrc%5Etfw">@BESCitSci</a> <a href="https://t.co/qIbK4k6LQX">pic.twitter.com/qIbK4k6LQX</a></p>&mdash; BES Quant. Ecology (@BES_QE_SIG) <a href="https://twitter.com/BES_QE_SIG/status/1181612342846603264?ref_src=twsrc%5Etfw">October 8, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>
+Our group approached a task looking at people's access to nature. We wanted to couple socioeconomic data with spatial data to assess inequalities in people's access to nature. With time spent amongst green spaces having positive impacts on mental health, ensuring that people from all areas have access to the beauty of nature  is of increasing importance for policy makers. The question was big and we hoped that it would yield some interesting results. We learned that trying to process spatial data at the ward level (local authority areas typically used for electoral purposes) for the whole of England and Wales was probably a bit much for the time that we had! Although we did manage to make some pretty maps perhaps we should have concentrated our efforts on a localised area but you live and learn!
+</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Winners of &#39;Best Visualisation&#39;, the Access to Nature team, explored who in the UK has the least access to data <a href="https://twitter.com/hashtag/QEHack?src=hash&amp;ref_src=twsrc%5Etfw">#QEHack</a> <a href="https://twitter.com/OwenMiiddleton?ref_src=twsrc%5Etfw">@OwenMiiddleton</a> repo: <a href="https://t.co/xzjfNpHaUU">https://t.co/xzjfNpHaUU</a> <a href="https://t.co/bvWTjRmMk9">pic.twitter.com/bvWTjRmMk9</a></p>&mdash; BES Quant. Ecology (@BES_QE_SIG) <a href="https://twitter.com/BES_QE_SIG/status/1181893329451175937?ref_src=twsrc%5Etfw">October 9, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>
+This was my first Hackathon and I’m definitely going to make sure that it won’t be my last. The opportunity to problem-solve as part of a team and code collaboratively is completely different from my daily existence as a PhD student. Having seen how different people approach the same problem is a great learning experience, one that really challenges you to push yourself outside of your comfort zone. Similarly seeing how someone else’s code differs from your own, particularly when trying to achieve the same output, is a really great way to discover new tips, packages and functions that you might not have otherwise come across.
+</p>
+<p>
+One of the wonderful things about the event was the positive atmosphere, the encouragement that no question was too stupid, the willingness of everyone in the team to help others learn something new, and the sense of teamwork to achieve a common goal. I think that this was largely down to the wonderful organising team who went out of their way to help teams out wherever possible and thanks to the inspiration that Anna had given to us all at the start of the day.
+</p>
+
+<p>
+We finished the day with a roundup of each team’s progress and the presentation of certificates of awesomeness that reflected the achievements of each team throughout the day. One of the cool projects that was worked on during the day was a project that developed a now publicly available dataset of AI validated plant records from Flickr images with a cool interactive shiny app to show where each image comes from.
+</p>
+<p>
+With several of the teams planning to continue the work that they started on the day it looks like there will be more exciting outputs still to come from this event. Hopefully these successes will be carried forwards and we will see similar events from the BES QE special interest group in the future
+</p>
+
+
+
+    <a href="https://www.twitter.com/JKRWard" class="fa fa-twitter"></a>
+    <a href="https://www.github.com/JKRWard" class="fa fa-github"></a>
+
+ </section>
+ <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+ <script src= "js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
